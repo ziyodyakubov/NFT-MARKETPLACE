@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+
+.monosans{
+  font-family: "Space Mono" !important;
+  font-size: 22px !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700 !important;
+    line-height: 160% !important;
+    letter-spacing: 0% !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+}
+
+.monosans-2{
+  font-family: "Space Mono" !important;
+}
+
+::placeholder{
+  color:#2B2B2B !important;
+  font-size: 16px !important;
+}
+
+
+body{
+  background-color: #2B2B2B;
+}
+
+.container{
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+}
+
+.container-2{
+  max-width: 980px !important;
+  margin: 0 auto !important;
+}
