@@ -32,6 +32,9 @@ import CategoryEight from "./category-8.png"
 import NftOne from "./nft-1.png"
 import NftTwo from "./nft-2.png"
 import NftThree from "./nft-3.png"
+import WorkOne from "./icon-1.png"
+import WorkTwo from "./icon-2.png"
+import WorkThree from "./icon-3.png"
+import CosmonavtLast from "./last-cosmonavt.png"
 
-
-export {Intro,Bear,twentyfive,Cat,DogBig,MushroomBig,MushroomLittleOne,MushroomLittleTwo,PersonLittleOne,PersonLittleTwo,PersonBig,PersonOne,PersonTwo,PersonThree,PersonFour,PersonFive,PersonSix,PersonSeven,PersonEight,PersonNine,PersonTen,PersonEleven,PersonOnikki,CategoryOne,CategoryTwo,CategoryThree,CategoryFour,CategoryFive,CategorySix,CategorySeven,CategoryEight,NftOne,NftTwo,NftThree}
+export {Intro,Bear,twentyfive,Cat,DogBig,MushroomBig,MushroomLittleOne,MushroomLittleTwo,PersonLittleOne,PersonLittleTwo,PersonBig,PersonOne,PersonTwo,PersonThree,PersonFour,PersonFive,PersonSix,PersonSeven,PersonEight,PersonNine,PersonTen,PersonEleven,PersonOnikki,CategoryOne,CategoryTwo,CategoryThree,CategoryFour,CategoryFive,CategorySix,CategorySeven,CategoryEight,NftOne,NftTwo,NftThree,WorkOne,WorkTwo,WorkThree,CosmonavtLast}

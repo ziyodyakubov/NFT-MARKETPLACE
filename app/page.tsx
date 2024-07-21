@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Intro,twentyfive,Bear,Cat,DogBig,MushroomBig,MushroomLittleOne,MushroomLittleTwo,PersonBig,PersonLittleOne,PersonLittleTwo,PersonOne,PersonTwo,PersonThree,PersonFour,PersonFive,PersonSix,PersonSeven,PersonEight,PersonNine,PersonTen,PersonEleven,PersonOnikki,CategoryOne,CategoryTwo,CategoryThree,CategoryFour,CategoryFive,CategorySix,CategorySeven,CategoryEight,NftOne,NftTwo,NftThree} from "@/png"
+import {Intro,twentyfive,Bear,Cat,DogBig,MushroomBig,MushroomLittleOne,MushroomLittleTwo,PersonBig,PersonLittleOne,PersonLittleTwo,PersonOne,PersonTwo,PersonThree,PersonFour,PersonFive,PersonSix,PersonSeven,PersonEight,PersonNine,PersonTen,PersonEleven,PersonOnikki,CategoryOne,CategoryTwo,CategoryThree,CategoryFour,CategoryFive,CategorySix,CategorySeven,CategoryEight,NftOne,NftTwo,NftThree,WorkOne,WorkTwo,WorkThree,CosmonavtLast} from "@/png"
 import { Avatar,FoxAva,RoboAva,ChinaAva,NftAvaOne,NftAvaTwo,NftAvaThree } from "@/svg";
 
 export default function Home() {
@@ -34,6 +34,12 @@ export default function Home() {
     {image: NftOne,author:"MoonDancer",name: "Distant Galaxy",ava: NftAvaOne},
     {image: NftTwo,author:"NebulaKid",name: "Life On Edena",ava: NftAvaTwo},
     {image: NftThree,author:"Spaceone",name: "AstroFiction",ava: NftAvaThree},
+  ]
+
+  const works = [
+    {image: WorkOne,title: "Setup Your wallet",desc: "Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner."},
+    {image: WorkTwo,title: "Create Collection",desc: "Upload your work and setup your collection. Add a description, social links and floor price."},
+    {image: WorkThree,title: "Start Earning",desc: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others."},
   ]
 
   const categories = [CategoryOne,CategoryTwo,CategoryThree,CategoryFour,CategoryFive,CategorySix,CategorySeven,CategoryEight]
@@ -248,15 +254,56 @@ export default function Home() {
                  </div>
             </section>
             {/* SECTION-5 ENDED */}
-        </div>
-        {/* CONTAINER ENDED */}
-            
 
             {/* SECTION-6 STARTED */}
             <section id="section-6">
               
             </section>
             {/* SECTION-6 ENDED */}
+
+            {/* SECTION-7 STARTED */}
+            <section id="section-7" className="py-[80px]">
+                <div className="mb-[48px]">
+                  <h2 className="text-[#fff] text-[38px] font-[600] mb-[10px]">How it works</h2>
+                  <p className="text-[#ffffffe2] text-[22px] font-[400]">Find out how to get started</p>
+                </div>
+
+                <div className="flex items-center justify-between gap-[30px]">
+                    {
+                      works.map((item,index)=>(
+                        <div key={index} className="card flex flex-col gap-[10px] items-center px-[30px] pb-[30px] pt-[10px] rounded-[20px] w-[330px] h-[438px] bg-[#3B3B3B]">
+                        <Image src={item.image} alt="img-1"/>
+
+                        <h3 className="mt-[5px] text-[#fff] font-[600] text-[22px]">{item.title}</h3>
+
+                        <p className="text-center text-[16px] font-[400] text-[#fff]">{item.desc}</p>
+                    </div>
+                      ))
+                    }
+                </div>
+            </section>
+            {/* SECTION-7 ENDED */}
+
+            {/* SECTION-8 STARTED */}
+            <section id="section-8" className="pt-[40px] pb-[80px]">
+              <div className="card flex items-center gap-[80px] p-[60px] bg-[#3B3B3B] w-[1050px] rounded-[20px] h-[430px]">
+                  <Image src={CosmonavtLast} alt="cosmonavt image"/>
+
+                  <div className="flex flex-col gap-[10px] w-[400px]">
+                    <h3 className="text-[38px] font-[600] text-[#Fff] leading-[45px]">Join Our Weekly Digest</h3>
+
+                    <p className="text-[22px] font-[400] text-[#FFf]">Get exclusive promotions & updates straight to your inbox.</p>
+
+                     <div className="flex pl-[19px] w-[420px] justify-between gap-[12px] mt-[30px] rounded-[20px] bg-[#fff]">
+                            <input type="email" className="outline-none w-[220px]" placeholder="Enter your email here" />
+                            <button type="submit" className="py-[19px] px-[50px] flex items-center gap-[14px] rounded-[20px] transition-all  hover:bg-[#a159ffe1] active:bg-[#A259FF] bg-[#A259FF] text-[#fff] font-[600]"><i className='bx text-[20px] bx-envelope'></i>Subscribe</button>
+                        </div>
+                  </div>
+              </div>
+            </section>
+            {/* SECTION-8 ENDED */}
+        </div>
+        {/* CONTAINER ENDED */}
       </>
   );
 }
