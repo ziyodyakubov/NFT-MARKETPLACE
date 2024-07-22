@@ -45,3 +45,9 @@ body{
   max-width: 1050px !important;
   margin: 0 auto !important;
 }
+
+.container-3{
+  max-width: 640px !important;
+  margin: 0 auto !important; 
+  padding: 0 10px;
+}
